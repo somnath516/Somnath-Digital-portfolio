@@ -211,6 +211,32 @@
             animation: float 3s ease-in-out infinite;
         }
         
+        /* NEW: Resume Download Button Styles */
+        .resume-container {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .resume-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 2rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+        }
+        
+        .resume-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+            background: #1e4fcf;
+        }
+        
         @keyframes float {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-5px); }
@@ -316,7 +342,6 @@
                 <span class="skill">Git</span>
                 <span class="skill">Web Development</span>
                 <span class="skill">Problem Solving</span>
-                <span class="skill">UI Automation</span>
             </div>
         </section>
         
@@ -378,6 +403,18 @@
                 <p><strong>ICT Academy Learnathon</strong></p>
             </div>
         </section>
+
+        <!-- NEW: Resume Download Section -->
+        <div class="resume-container">
+            <a href="resume.pdf" class="resume-btn" download="Somnath_MS_Resume">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download CV
+            </a>
+        </div>
     </main>
     
     <footer>
